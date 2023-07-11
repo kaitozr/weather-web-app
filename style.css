@@ -1,0 +1,188 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    width: 1200px;
+    height: 800px;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+    background-image: url("./assets/background/pexels-josh-hild-3573383.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.container-overlay {
+    position: fixed;
+    width: 1200px;
+    height: 800px;
+    background-color: #0A0A23;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+
+.container-header {
+    display: flex;
+    justify-content: center;
+}
+.container-header h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding-top: 10px;
+    z-index: 3;
+
+}
+
+.container-footer {
+    position: absolute;
+    /* justify-self: flex-start; */
+    bottom: 0;
+    width: 1200px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+
+}
+
+.header-background {
+    position: absolute;
+    /* justify-self: flex-start; */
+    top: 0;
+    width: 1200px;
+    height: 80px;
+    background-color: #1A2A4A;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.github-button{
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+
+    background-image:url("./assets/icos/github-mark-white.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 57.5px;
+    height: 56.25px;
+   
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.github-button:hover {
+    opacity: 0.6;
+    transition: opacity 0.4s ease-in-out;
+}
+
+#preview-box {
+    width: 167.1px;
+    height: 180px;
+    display: inline-flex;
+    justify-content: center;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: #a1a1a186; 
+    position: relative;
+}
+
+#preview-header {
+    font-weight: 400;
+    position: absolute;
+    top: 0;
+    color: #a1a1a186; 
+    opacity: 1;
+}
+
+#preview-ico {
+    position: absolute;
+    padding-top: 60px;
+    width: 50px;
+    height: 50px;
+}
+
+#preview-temp {
+    position: absolute;
+    padding-top: 120px;
+    padding-left: 10px;
+    font-size: 38px;
+    text-align: center;
+    margin: 0;
+}
+
+#map-info {
+    position: absolute;
+    display: inline-flex;
+    z-index: 3;
+    right: 0;
+    margin-top: 300px;
+    margin-right: 15px;
+    /* padding-right: 15px; */
+    width: fit-content;
+    height: fit-content;
+}
+#map-ico {
+    width: 80px;
+    height: 80px;
+}
+
+#calendar-info {
+    position: absolute;
+    display: inline-flex;
+    z-index: 3;
+    left: 0;
+    margin-top: 300px;
+    padding-left: 25px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#calendar-ico {
+    width: 80px;
+    height: 80px;
+}
+
+.today h2 {
+    text-align: left;
+    color: white;
+    margin: 0;
+    font-size: 32px;
+}
+
+.today {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.city h2 {
+    text-align: right;
+    color: white;
+    margin: 0;
+    font-size: 32px;
+}
+
+.today-mood {
+    position: relative;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
