@@ -6,3 +6,5 @@ When i started, the idea was to made it show the preview for the next days but w
 The page shows the date, temperatura and changes the icon for the weather.
 
 ![preview](https://i.imgur.com/5QGql6F.png)
+
+design inspired by [Zazzle Media](https://dribbble.com/shots/3222581-Weather-UI-Widget)
